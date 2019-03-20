@@ -1,0 +1,22 @@
+db:
+  image: mysql:latest
+  environment:
+    MYSQL_ROOT_PASSWORD: password
+    MYSQL_DATABASE: blood_bank
+    MYSQL_USER: blood_bank_user
+    MYSQL_PASSWORD: blood_bank_password
+  ports:
+    - "32795:3306"
+  container_name: mysql_container
+  volumes:
+    - ./db:/docker-entrypoint-initdb.d
+
+tomcat:
+  image: tomcat:9
+  ports:
+    - "12000:8080"
+  container_name: tomcat_container
+  volumes:
+    - ./target/:/usr/local/tomcat/webapps
+  links:
+    - db
