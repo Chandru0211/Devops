@@ -8,17 +8,17 @@
  
     <context-param>
         <param-name>jdbcURL</param-name>
-        <param-value>jdbc:mysql://db:32795/Bookstore</param-value>
+        <param-value>jdbc:mysql://mysql_container:3306/Bookstore</param-value>
     </context-param>
  
     <context-param>
         <param-name>jdbcUsername</param-name>
-        <param-value>blood_bank_user</param-value>
+        <param-value>user</param-value>
     </context-param>
  
     <context-param>
         <param-name>jdbcPassword</param-name>
-        <param-value>blood_bank_password</param-value>
+        <param-value>pass</param-value>
     </context-param>
  
     <servlet>

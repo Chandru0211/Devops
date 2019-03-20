@@ -1,5 +1,6 @@
-CREATE DATABASE Bookstore;
 USE Bookstore;
+
+DROP TABLE IF EXISTS book;
  
 CREATE TABLE book (
   book_id int(11) NOT NULL AUTO_INCREMENT,

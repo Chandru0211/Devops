@@ -6,6 +6,7 @@
   <packaging>war</packaging>
   <name>Bookstore-CRUD</name>
   <build>
+  <finalName>Bookstore</finalName>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
